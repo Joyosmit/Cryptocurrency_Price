@@ -1,8 +1,8 @@
 const express = require("express");
 const statsRoutes = require("./routes/statsRoutes");
 const dotenv = require("dotenv");
-const dbConnect = require("./utils/dbConnect");
 dotenv.config();
+const dbConnect = require("./utils/dbConnect");
 const app = express();
 const PORT = process.env.PORT || 3000;
 

@@ -1,6 +1,8 @@
 const axios = require('axios');
+const dotenv = require("dotenv");
+dotenv.config();
 
-const COINGECKO_API_URL = 'https://api.coingecko.com/api/v3/coins/markets';
+const COINGECKO_API_URL = process.env.COINGECKO_API_URL;
 
 exports.getCryptoData = async (coin) => {
     try {
